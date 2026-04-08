@@ -1,50 +1,93 @@
-# Crearea unei Aplicații de Quiz în React (cu useState, useEffect și Context)
+# Crearea unei Aplicații Quiz cu React
+
 ## Cerințe Generale
+
 ### Configurare Proiect
 - Creează un proiect `React` folosind `Vite`.
-- Folosește fișiere `.json` pentru a stoca întrebările și răspunsurile.
+- Aplicația trebuie să fie o platformă de test interactiv cu întrebări structurate local (fișier JSON), acoperind mai multe categorii tematice.
+
+### Tematica
+- Fiecare student își alege propria tematică pentru întrebările din quiz. Tematica trebuie să fie suficient de complexă pentru a acoperi cel puțin **3 categorii distincte** și **minim 45 de întrebări** (câte 15 per categorie).
+- Exemple orientative: geografie & istorie, știință & tehnologie, cultură generală, sport, muzică, cinematografie, literatură etc.
+- Fiecare întrebare trebuie să aibă categorie și nivel de dificultate.
+
 ### Interfață Utilizator (UI) & Experiență
-- Paginile trebuie să fie responsive (optimizate pentru mobile, tabletă și desktop).
-- Stilizarea se poate face cu CSS/modulare sau biblioteci externe (e.g., Tailwind, Material-UI).
-- Implementează schimbarea temei (minim 2: light și dark) cu un buton accesibil.
+- Stilizarea se poate face cu CSS pur / CSS Modules sau biblioteci externe (e.g., Tailwind, Material-UI).
+- Interfața trebuie să fie funcțională, plăcută vizual și să suporte temă light/dark cu persistența selecției.
+
+---
+
 ## Funcționalități
-### 1. Pagina de Start
-Utilizatorul introduce:
-- Numele.
-- Opțiuni de quiz:
-    - Ordine aleatorie a întrebărilor (da/nu).
-    - Timp limită per întrebare (e.g., 10s, sau posibilitatea de a avea timp nelimitat).
 
-Toate valorile sunt obligatorii, deci validați să fie corecte sau oferiți valori implicite adecvate.
-### 2. Structura Întrebărilor
-Fiecare întrebare are:
-- Categorie (e.g., "Istorie", "Matematică").
-- Dificultate (e.g., "Ușor", "Mediu", "Greu").
-- 4 opțiuni de răspuns (doar una corectă).
+### 1. Pagina de Start — Configurare Quiz
 
-Aceste detalii trebuie afișate în timpul quiz-ului.
+- Utilizatorul introduce un **nume de utilizator** (cu validare — câmpul nu poate fi gol).
+- Utilizatorul selectează:
+  - **Categoria** de întrebări (cel puțin 3 categorii + opțiunea "Toate").
+  - **Numărul de întrebări** (e.g., 5, 10, 15, 20 sau toate disponibile). Opțiunile disponibile se ajustează dinamic în funcție de categoria selectată.
+  - **Limita de timp** per întrebare (e.g., nelimitat, 10s, 15s, 20s, 30s).
+- La submit, quizul se pornește cu parametrii configurați.
 
-### 3. Afișarea Rezultatelor
-După finalizarea quiz-ului, afișează:
-- Scorul final (e.g., "8/10 răspunsuri corecte").
-- Detalii de întrebări (care au fost răspunse corect/greșit).
-- Istoric scoruri (salvat în localStorage): Tabel cu Username și Highest Score pentru toți utilizatorii.
+### 2. Desfășurarea Quiz-ului
 
-### 4. Resetare & Persistență
-- Adaugă un buton pentru resetare quiz (revenire la pagina de start).
-- Păstrează istoricul scorurilor (localStorage).
+- Afișează progresul curent (întrebarea X din N), categoria și dificultatea întrebării.
+- Afișează un **timer vizual**. La expirarea timpului, întrebarea este marcată automat ca incorectă.
+- Afișează mai multe variante de răspuns cu feedback vizual imediat după selecție (corect/greșit).
+- Afișează un contor de **streak** (răspunsuri corecte consecutive), vizibil de la 2+.
+
+### 3. Pagina de Rezultate & Analiză
+
+- Afișează scorul final (corecte / total) și procentajul obținut.
+- Afișează streak-ul maxim atins în încercare.
+- Afișează câte răspunsuri corecte din câte disponibile per categorie.
+- Permite revizuirea detaliată a răspunsurilor cu filtre:
+  - Tab-uri: Toate / Corecte / Greșite.
+  - Dropdown de filtrare pe categorie.
+- Fiecare card de răspuns afișează: întrebarea, răspunsul dat, răspunsul corect (dacă a fost greșit).
+- Afișează un tabel cu istoricul scorurilor (top scoruri per utilizator) sortate după performanță.
+- Include buton de "Încearcă din nou" care resetează quizul.
+
+### 4. Temă Light/Dark cu Persistență
+
+- Implementează un buton de comutare pentru tema light/dark.
+- Tema selectată se stochează în **`localStorage`** și persistă între sesiuni.
+
+### 5. Persistență Sesiune Activă
+
+- Starea quiz-ului activ (faza curentă, întrebări, răspunsuri date) se salvează în **`localStorage`** la fiecare modificare.
+- La reîncărcarea paginii în mijlocul unui quiz, sesiunea este **recuperată automat**.
+- La revenirea la pagina de start, sesiunea salvată este ștearsă
+
+### 6. Gestionarea Stării cu Context API și Reducer
+
+- Implementează un **Context** global pentru starea quiz-ului, folosind `useReducer`.
+- Reducer-ul gestionează cel puțin acțiunile: `START_QUIZ`, `ANSWER_QUESTION`, `RESET`.
+- Implementează un **Context separat** pentru temă (light/dark).
+- Niciun component nu primește starea quiz-ului prin props — totul se consumă din context.
+
+### 7. Optimizări de Performanță
+
+- Calculele "costisitoare" (statistici pe categorii, filtrare răspunsuri, sortare istoric) se realizează cu **`useMemo`**.
+- Handler-ele de evenimente se memoizează cu **`useCallback`** pentru a nu provoca re-render-uri inutile.
+- Componentele care primesc date stabile se imbrică cu **`React.memo`**.
 
 ## Barem de notare
-| Punctaj  | Sarcina    
-|----------|:------------------------------:|
-| 0.5      |  Crearea corectă a proiectului |
-| 0.5      |  Utilizarea fișiere `JSON` pentru salvarea datelor |
-| 1      |  UI Responsive |
-| 1      |  Implementarea schimbării temei |
-| 1      | Afișarea scorului final și corectitudinea răspunsurilor selectate|
-| 1      | Crearea și utilizarea corectă a state-ului, efectelor secundare și context-ului, cât și a `custom hook-urilor`|
-| 2      | Afișarea și salvarea corectă a istoricului tuturor scorurilor |
-| 2      |  Funcționarea corectă a opțiunilor testului (random - 0.5p și timer - 1.5p) |
 
-## !! BAREM-UL DE MAI SUS ESTE PENTRU VERIFICAREA INIȚIALĂ A LABORATORULUI - LA ÎNCĂRCAREA ACESTUIA PE GITHUB. NOTA FINALĂ POATE FI MODIFICATĂ ÎN DEPENDENȚA APĂRĂRII LABORATORULUI ÎN CADRUL ORELOR!!
+| Punctaj | Sarcina |
+|---------|---------|
+| 1 | Crearea corectă a proiectului (Vite + React) și structura fișierelor; date JSON cu minim 45 întrebări în 3+ categorii |
+| 1 | Pagina de start cu configurare completă (username, categorie, număr întrebări, timp) cu validare și ajustare dinamică |
+| 1 | UI plăcut și funcțional (stilizare coerentă, temă light/dark, responsive minimal) |
+| 1 | Desfășurarea quiz-ului: timer vizual, feedback răspuns, streak counter, avansare automată la timeout |
+| 1 | Pagina de rezultate: scor, breakdown categorii, revizuire cu filtre, tabel istoric scoruri |
+| 1 | Persistență temă și sesiune activă în `localStorage`; recuperare sesiune la reload |
+| 1 | Gestionarea stării cu Context API + `useReducer` |
+| 1 | Custom hooks reutilizabile (`useTimer`, `useLocalStorage` sau echivalente) |
+| 1 | Optimizări de performanță (`useMemo`, `useCallback`, `React.memo`) aplicate corect |
+| 1 | Funcțoinarea corectă a tuturor funcționalităților implementate |
+
+### Link de exemplu de soluție: [Quiz App](https://lab9-react-example.vercel.app/)
+
+## !! BAREM-UL DE MAI SUS ESTE PENTRU VERIFICAREA INIȚIALĂ A LABORATORULUI — LA ÎNCĂRCAREA ACESTUIA PE GITHUB. NOTA FINALĂ POATE FI MODIFICATĂ ÎN DEPENDENȚA APĂRĂRII LABORATORULUI ÎN CADRUL ORELOR !!
+
 ## !! NU SE ACCEPTĂ ÎNTÂRZIERI !!
