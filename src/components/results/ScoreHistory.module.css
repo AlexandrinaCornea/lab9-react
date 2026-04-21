@@ -1,0 +1,79 @@
+.empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.headRow {
+  border-bottom: 2px solid var(--border);
+}
+
+.headCell {
+  padding: 8px 12px;
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.row {
+  border-bottom: 1px solid var(--border);
+}
+
+.topRow {
+  background: var(--accent-light);
+}
+
+.rankCell {
+  padding: 10px 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.topRankCell {
+  color: var(--accent);
+}
+
+.userCell {
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.cell {
+  padding: 10px 12px;
+}
+
+.categoryCell {
+  padding: 10px 12px;
+  color: var(--text-secondary);
+}
+
+.percentCell {
+  padding: 10px 12px;
+  font-weight: 700;
+}
+
+.success {
+  color: var(--success);
+}
+
+.warning {
+  color: var(--warning);
+}
+
+.error {
+  color: var(--error);
+}

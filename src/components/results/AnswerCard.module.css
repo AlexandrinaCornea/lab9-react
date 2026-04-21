@@ -1,0 +1,73 @@
+.card {
+    border-radius: var(--radius-md);
+    border: 1.5px solid var(--border);
+    padding: 16px;
+    background: var(--bg-secondary);
+}
+
+.correct {
+    border-left: 4px solid var(--success);
+}
+
+.wrong {
+    border-left: 4px solid var(--error);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.num {
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.status {
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.correct .status {
+    color: var(--success);
+}
+
+.wrong .status {
+    color: var(--error);
+}
+
+.question {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.given {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.correctAnswer {
+    font-size: 13px;
+    color: var(--success);
+    font-weight: 600;
+}
+
+.timedOut {
+    font-size: 13px;
+    color: var(--warning);
+    font-weight: 600;
+}

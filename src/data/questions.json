@@ -1,0 +1,429 @@
+[
+  {
+    "id": 1,
+    "category": "Muzică",
+    "difficulty": "easy",
+    "question": "Cine a cântat piesa 'Bohemian Rhapsody'?",
+    "options": ["The Beatles", "Queen", "Led Zeppelin", "Pink Floyd"],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "category": "Muzică",
+    "difficulty": "easy",
+    "question": "Cum este supranumit Michael Jackson?",
+    "options": [
+      "Regele Rock-ului",
+      "Regele Pop-ului",
+      "Zeul Muzicii",
+      "Prințul Scenei"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "category": "Muzică",
+    "difficulty": "easy",
+    "question": "Care trupă a lansat albumul 'The Dark Side of the Moon'?",
+    "options": ["The Rolling Stones", "Pink Floyd", "The Doors", "Deep Purple"],
+    "correct": 1
+  },
+  {
+    "id": 4,
+    "category": "Muzică",
+    "difficulty": "easy",
+    "question": "Cine a compus 'Simfonia a 9-a' cu celebrul 'Imn al Bucuriei'?",
+    "options": [
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Ludwig van Beethoven",
+      "Franz Schubert"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 5,
+    "category": "Muzică",
+    "difficulty": "easy",
+    "question": "Care este numele real al artistei Lady Gaga?",
+    "options": [
+      "Stefani Germanotta",
+      "Robyn Fenty",
+      "Alecia Moore",
+      "Ella Yelich-O'Connor"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "category": "Muzică",
+    "difficulty": "medium",
+    "question": "Câte corzi are o chitară clasică standard?",
+    "options": ["4", "5", "6", "7"],
+    "correct": 2
+  },
+  {
+    "id": 7,
+    "category": "Muzică",
+    "difficulty": "medium",
+    "question": "Albumul 'Abbey Road' aparține trupei...",
+    "options": ["The Rolling Stones", "The Who", "The Beatles", "The Kinks"],
+    "correct": 2
+  },
+  {
+    "id": 8,
+    "category": "Muzică",
+    "difficulty": "medium",
+    "question": "În ce an a decedat Michael Jackson?",
+    "options": ["2007", "2008", "2009", "2010"],
+    "correct": 2
+  },
+  {
+    "id": 9,
+    "category": "Muzică",
+    "difficulty": "medium",
+    "question": "Ce instrument cântă Yo-Yo Ma?",
+    "options": ["Vioară", "Violoncel", "Violă", "Contrabas"],
+    "correct": 1
+  },
+  {
+    "id": 10,
+    "category": "Muzică",
+    "difficulty": "medium",
+    "question": "Care compozitor polonez este celebru pentru nocturne și mazurci?",
+    "options": [
+      "Franz Liszt",
+      "Frédéric Chopin",
+      "Johannes Brahms",
+      "Antonín Dvořák"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 11,
+    "category": "Muzică",
+    "difficulty": "hard",
+    "question": "Ce înseamnă termenul muzical 'fortissimo'?",
+    "options": ["Foarte încet", "Moderat", "Tare", "Foarte tare"],
+    "correct": 3
+  },
+  {
+    "id": 12,
+    "category": "Muzică",
+    "difficulty": "hard",
+    "question": "Cine a compus opera 'La Traviata'?",
+    "options": [
+      "Giacomo Puccini",
+      "Wolfgang Amadeus Mozart",
+      "Giuseppe Verdi",
+      "Richard Wagner"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 13,
+    "category": "Muzică",
+    "difficulty": "hard",
+    "question": "'Anotimpurile' (The Four Seasons) a fost compus de...",
+    "options": [
+      "Johann Sebastian Bach",
+      "Antonio Vivaldi",
+      "George Frideric Handel",
+      "Claudio Monteverdi"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 14,
+    "category": "Muzică",
+    "difficulty": "hard",
+    "question": "Ce măsură de timp caracterizează valsul?",
+    "options": ["2/4", "4/4", "3/4", "6/8"],
+    "correct": 2
+  },
+  {
+    "id": 15,
+    "category": "Muzică",
+    "difficulty": "hard",
+    "question": "Câți ani a trăit Wolfgang Amadeus Mozart?",
+    "options": ["31", "35", "41", "47"],
+    "correct": 1
+  },
+
+  {
+    "id": 16,
+    "category": "Formula 1",
+    "difficulty": "easy",
+    "question": "Câte puncte primește câștigătorul unei curse de Formula 1?",
+    "options": ["10", "15", "20", "25"],
+    "correct": 3
+  },
+  {
+    "id": 17,
+    "category": "Formula 1",
+    "difficulty": "easy",
+    "question": "În ce țară/principat se desfășoară Marele Premiu de la Monaco?",
+    "options": ["Franța", "Italia", "Monaco", "Elveția"],
+    "correct": 2
+  },
+  {
+    "id": 18,
+    "category": "Formula 1",
+    "difficulty": "easy",
+    "question": "Ce înseamnă abrevierea DRS în Formula 1?",
+    "options": [
+      "Driver Reaction System",
+      "Drag Reduction System",
+      "Dynamic Racing Speed",
+      "Dual Rear Stabilizer"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 19,
+    "category": "Formula 1",
+    "difficulty": "easy",
+    "question": "Câte campionate mondiale a câștigat Michael Schumacher?",
+    "options": ["5", "6", "7", "8"],
+    "correct": 2
+  },
+  {
+    "id": 20,
+    "category": "Formula 1",
+    "difficulty": "easy",
+    "question": "Ce culoare iconică reprezintă mașinile Ferrari în Formula 1?",
+    "options": ["Albastru", "Roșu", "Galben", "Argintiu"],
+    "correct": 1
+  },
+  {
+    "id": 21,
+    "category": "Formula 1",
+    "difficulty": "medium",
+    "question": "În ce an a avut loc primul sezon oficial de Formula 1?",
+    "options": ["1946", "1948", "1950", "1952"],
+    "correct": 2
+  },
+  {
+    "id": 22,
+    "category": "Formula 1",
+    "difficulty": "medium",
+    "question": "Care circuit este cunoscut drept 'Templul Vitezei'?",
+    "options": ["Silverstone", "Spa-Francorchamps", "Monza", "Suzuka"],
+    "correct": 2
+  },
+  {
+    "id": 23,
+    "category": "Formula 1",
+    "difficulty": "medium",
+    "question": "Cine este cel mai tânăr campion mondial din istoria F1?",
+    "options": [
+      "Fernando Alonso",
+      "Kimi Räikkönen",
+      "Max Verstappen",
+      "Sebastian Vettel"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 24,
+    "category": "Formula 1",
+    "difficulty": "medium",
+    "question": "Max Verstappen concurează pentru echipa...",
+    "options": ["Mercedes", "Ferrari", "Red Bull Racing", "McLaren"],
+    "correct": 2
+  },
+  {
+    "id": 25,
+    "category": "Formula 1",
+    "difficulty": "medium",
+    "question": "Care pilot a câștigat Campionatul Mondial F1 în 2023?",
+    "options": [
+      "Lewis Hamilton",
+      "Max Verstappen",
+      "Fernando Alonso",
+      "Carlos Sainz"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 26,
+    "category": "Formula 1",
+    "difficulty": "hard",
+    "question": "În ce an a câștigat Ayrton Senna primul său titlu mondial F1?",
+    "options": ["1985", "1986", "1987", "1988"],
+    "correct": 3
+  },
+  {
+    "id": 27,
+    "category": "Formula 1",
+    "difficulty": "hard",
+    "question": "Cum se numește circuitul de Formula 1 din Singapore?",
+    "options": [
+      "Changi Circuit",
+      "Marina Bay Street Circuit",
+      "Singapore GP Circuit",
+      "Jurong Island Circuit"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 28,
+    "category": "Formula 1",
+    "difficulty": "hard",
+    "question": "Câte puncte a marcat Max Verstappen în sezonul record 2023?",
+    "options": ["454", "510", "575", "621"],
+    "correct": 2
+  },
+  {
+    "id": 29,
+    "category": "Formula 1",
+    "difficulty": "hard",
+    "question": "Care echipă a câștigat primul Campionat al Constructorilor din istoria F1 (1958)?",
+    "options": ["Ferrari", "Vanwall", "Cooper", "BRM"],
+    "correct": 1
+  },
+  {
+    "id": 30,
+    "category": "Formula 1",
+    "difficulty": "hard",
+    "question": "Câte curse Grand Prix a inclus calendarul de Formula 1 în sezonul 2024?",
+    "options": ["20", "22", "24", "26"],
+    "correct": 2
+  },
+
+  {
+    "id": 31,
+    "category": "Cunoștințe Generale",
+    "difficulty": "easy",
+    "question": "Care este capitala Franței?",
+    "options": ["Londra", "Berlin", "Paris", "Madrid"],
+    "correct": 2
+  },
+  {
+    "id": 32,
+    "category": "Cunoștințe Generale",
+    "difficulty": "easy",
+    "question": "Câte continente are Pământul?",
+    "options": ["5", "6", "7", "8"],
+    "correct": 2
+  },
+  {
+    "id": 33,
+    "category": "Cunoștințe Generale",
+    "difficulty": "easy",
+    "question": "Cine a pictat tabloul 'Mona Lisa'?",
+    "options": ["Michelangelo", "Rafael", "Leonardo da Vinci", "Botticelli"],
+    "correct": 2
+  },
+  {
+    "id": 34,
+    "category": "Cunoștințe Generale",
+    "difficulty": "easy",
+    "question": "Care este cel mai mare ocean de pe Pământ?",
+    "options": [
+      "Oceanul Atlantic",
+      "Oceanul Indian",
+      "Oceanul Pacific",
+      "Oceanul Arctic"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 35,
+    "category": "Cunoștințe Generale",
+    "difficulty": "easy",
+    "question": "Ce simbol chimic are aurul?",
+    "options": ["Ag", "Au", "Fe", "Cu"],
+    "correct": 1
+  },
+  {
+    "id": 36,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "În ce an s-a încheiat Al Doilea Război Mondial?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "correct": 2
+  },
+  {
+    "id": 37,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "Care este capitala Australiei?",
+    "options": ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+    "correct": 3
+  },
+  {
+    "id": 38,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "Cine a scris piesa de teatru 'Romeo și Julieta'?",
+    "options": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Jane Austen",
+      "Oscar Wilde"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 39,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "Câte oase are corpul uman adult?",
+    "options": ["186", "196", "206", "216"],
+    "correct": 2
+  },
+  {
+    "id": 40,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "În ce an a fost inaugurat Turnul Eiffel?",
+    "options": ["1879", "1884", "1889", "1895"],
+    "correct": 2
+  },
+  {
+    "id": 41,
+    "category": "Cunoștințe Generale",
+    "difficulty": "medium",
+    "question": "Care element chimic are numărul atomic 1?",
+    "options": ["Heliu", "Oxigen", "Carbon", "Hidrogen"],
+    "correct": 3
+  },
+  {
+    "id": 42,
+    "category": "Cunoștințe Generale",
+    "difficulty": "hard",
+    "question": "Care este cea mai mică țară din lume după suprafață?",
+    "options": ["Monaco", "Liechtenstein", "San Marino", "Vatican"],
+    "correct": 3
+  },
+  {
+    "id": 43,
+    "category": "Cunoștințe Generale",
+    "difficulty": "hard",
+    "question": "Cine a descoperit penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Marie Curie",
+      "Alexander Fleming",
+      "Joseph Lister"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 44,
+    "category": "Cunoștințe Generale",
+    "difficulty": "hard",
+    "question": "Care este cel mai lung fluviu din lume?",
+    "options": ["Amazon", "Nilul", "Yangtze", "Mississippi"],
+    "correct": 1
+  },
+  {
+    "id": 45,
+    "category": "Cunoștințe Generale",
+    "difficulty": "hard",
+    "question": "Care este viteza luminii în vid (aproximativ)?",
+    "options": ["200.000 km/s", "250.000 km/s", "300.000 km/s", "350.000 km/s"],
+    "correct": 2
+  }
+]
